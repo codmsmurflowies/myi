@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="screen is-active" data-screen="intro">
+      <div class="content">
+        <p class="eyebrow">A small digital letter</p>
+        <h1>For you, on a day that deserves softness.</h1>
+        <p class="lead">
+          I wanted to make something that feels like us—quiet, warm, and intentional.
+        </p>
+        <button class="primary" data-action="next">Begin</button>
+      </div>
+      <div class="hint">Tap the button when you’re ready.</div>
+    </section>
+
+    <section class="screen" data-screen="story">
+      <div class="content">
+        <p class="eyebrow">Chapter one</p>
+        <h2>The way you make ordinary days glow</h2>
+        <p class="lead">
+          I notice the little things: how you pause to listen, how you turn a simple moment into
+          something I want to remember.
+        </p>
+        <p class="lead">
+          This is my way of saying thank you—for the kindness, the patience, the laughter that feels
+          like home.
+        </p>
+        <div class="controls">
+          <button class="ghost" data-action="back">Back</button>
+          <button class="primary" data-action="next">Keep going</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="surprise">
+      <div class="content">
+        <p class="eyebrow">A small surprise</p>
+        <h2>Something I keep close</h2>
+        <p class="lead">
+          There’s a quiet promise I carry around, just for you.
+        </p>
+        <button class="primary" data-action="reveal">Reveal the promise</button>
+        <div class="reveal" aria-live="polite">
+          <p>
+            I will keep choosing you—on the bright days, the quiet ones, and all the in-betweens.
+          </p>
+        </div>
+        <div class="controls">
+          <button class="ghost" data-action="back">Back</button>
+          <button class="primary" data-action="next">Final note</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="final">
+      <div class="content">
+        <p class="eyebrow">For us</p>
+        <h2>You are my favorite place to be.</h2>
+        <p class="lead">
+          Happy Valentine’s Day. Thank you for being the calm in my world and the spark in my heart.
+        </p>
+        <p class="signature">—Always, your developer</p>
+        <button class="ghost" data-action="restart">Read again</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
